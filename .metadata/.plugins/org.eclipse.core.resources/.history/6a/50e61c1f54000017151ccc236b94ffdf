@@ -1,0 +1,26 @@
+import java.util.HashSet;
+
+public class NewsSource implements Observable{
+
+	HashSet<Observer> observers = new HashSet<>();
+
+	
+	@Override
+	public void addSubscriber(Observer observer) {
+		this.observers.add(observer);
+		
+	}
+
+	@Override
+	public void removeSubscriber(Observer observer) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void update() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

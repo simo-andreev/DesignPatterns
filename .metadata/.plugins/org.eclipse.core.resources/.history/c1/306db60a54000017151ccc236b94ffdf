@@ -1,0 +1,12 @@
+import java.util.HashSet;
+
+public interface Observable {
+
+	void addSubscriber(Observer observer);
+	void removeSubscriber(Observer observer);
+	
+	HashSet<Observer> observers = new HashSet<>();
+
+	void update();
+	
+}

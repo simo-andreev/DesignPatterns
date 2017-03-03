@@ -1,0 +1,8 @@
+
+public interface Observer {
+
+	default void subscribe(Observable subject){
+		subject.addSubscriber(this);
+	}
+	
+}

@@ -1,0 +1,13 @@
+import java.util.HashSet;
+
+public interface Observer {
+
+	default void subscribe(Observable subject){
+		subject.addSubscriber(this);
+	}
+	void unsubscribe(Observable subject);
+	
+	void react();
+	
+	HashSet<Observer> observers = new HashSet<>();
+}

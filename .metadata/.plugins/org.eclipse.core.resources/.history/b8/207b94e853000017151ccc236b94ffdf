@@ -1,0 +1,15 @@
+
+public class ThisIsFakeNews implements Observable{
+
+	@Override
+	public void addSubscriber(Observer observer) {
+		this.obs
+	}
+
+	@Override
+	public void removeSubscriber(Observer observer) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
