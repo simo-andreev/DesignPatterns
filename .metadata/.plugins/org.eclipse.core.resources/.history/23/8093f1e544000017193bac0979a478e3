@@ -1,0 +1,19 @@
+
+public class MySingleton {
+
+	private static MySingleton instance;
+	
+	private int size;
+	private String name;
+	private Object obj;
+	
+	private MySingleton(){}
+	
+	
+	public MySingleton getIntstance(){
+		if(instance == null)
+			return new MySingleton();
+		return instance;
+	}
+	
+}

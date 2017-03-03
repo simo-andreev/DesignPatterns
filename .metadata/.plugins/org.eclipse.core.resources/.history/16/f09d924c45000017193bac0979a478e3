@@ -1,0 +1,12 @@
+
+public class MySingletonDemo {
+
+	public static void main(String[] args) {
+
+
+		MySingleton sng = MySingleton.getInstance("KKKK");
+		
+		
+	}
+
+}
