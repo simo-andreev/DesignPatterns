@@ -1,0 +1,44 @@
+import java.beans.beancontext.BeanContextServiceRevokedEvent;
+
+public abstract class Animal {
+
+	public enum Species {
+
+		HEDGEHOG, MOUSE, BEAR, WOLF;
+
+	}
+
+	private String name;
+	
+	public static final Animal newAnimal(Species spc, String name) throws IllegalArgumentException {
+
+		if (name == null || name.isEmpty())
+			throw new IllegalArgumentException("Illegal name: name must have a value!: " + name);
+
+		switch (spc) {
+			case BEAR:
+				return new Bear(name);
+				break;
+	
+			case HEDGEHOG:
+				return new Hedgehog(name);
+				break;
+	
+			case MOUSE:
+				return new Mouse(name);
+				break;
+	
+			case WOLF:
+				return new Wolf(name);
+				break;
+		}
+
+	}
+
+	public abstract String makeNoise();
+	
+	public getName(){
+		return this.name;
+	}
+
+}

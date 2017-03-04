@@ -3,4 +3,10 @@
 <fullyQualifiedTypeName name="java.security.GeneralSecurityException"/>
 <fullyQualifiedTypeName name="MySingletonDemo"/>
 <fullyQualifiedTypeName name="MySingleton"/>
+<fullyQualifiedTypeName name="java.util.HashSet"/>
+<fullyQualifiedTypeName name="Observer"/>
+<fullyQualifiedTypeName name="Observable"/>
+<fullyQualifiedTypeName name="NewsSource"/>
+<fullyQualifiedTypeName name="ThisIsFakeNews"/>
+<fullyQualifiedTypeName name="BBC"/>
 </qualifiedTypeNameHistroy>

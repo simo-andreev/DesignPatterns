@@ -1,0 +1,13 @@
+import Animal.Species;
+
+public class AnimalFactoryDemo {
+
+	public static void main(String[] args) {
+		
+		
+		Animal volk = Animal.newAnimal(Animal.Species.WOLF, "Volk");
+		
+		
+	}
+	
+}

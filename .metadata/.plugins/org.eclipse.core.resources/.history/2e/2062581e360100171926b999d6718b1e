@@ -1,0 +1,23 @@
+import java.util.LinkedList;
+
+public class AnimalFactoryDemo {
+
+	public static void main(String[] args) {
+		
+		
+		LinkedList<Animal> animals = new LinkedList<>();
+		
+		animals.add(Animal.newAnimal(Animal.Species.WOLF, "Volk"));
+		animals.add(Animal.newAnimal(Animal.Species.BEAR, "Medved"));
+		animals.add(Animal.newAnimal(Animal.Species.HEDGEHOG, "Sonic"));
+		animals.add(Animal.newAnimal(Animal.Species.MOUSE, "Mickey"));
+		
+		for (Animal animal : animals) {
+			System.out.println(animal.getName());
+			System.out.println(animal.makeNoise());
+		}
+		
+		
+	}
+	
+}

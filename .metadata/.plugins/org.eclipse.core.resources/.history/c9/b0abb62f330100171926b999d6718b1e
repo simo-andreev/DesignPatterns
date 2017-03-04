@@ -1,0 +1,23 @@
+
+public abstract class Animal {
+
+	public enum Species{
+		
+		HEDGEHOG,
+		MOUSE,
+		BEAR,
+		WOLF;
+		
+	}
+	
+	public static final Animal newAnimal(Species spc, String name){
+		
+		if(name == null || name.isEmpty())
+			throw new IllegalArgumentException("Illegal name: name must have a value!: " + name);
+			
+		
+	}
+
+	public abstract String makeNoise();
+	
+}
